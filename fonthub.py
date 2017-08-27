@@ -7,13 +7,7 @@ class Fonthub:
         'B': [],
         'C': [],
         'D': [],
-        'E': [
-            [1, 1, 1, 1, 1, 1, 1],
-            [1, 1, 1, 1, 1, 1, 1],
-            [1, 1, 0, 1, 0, 1, 1],
-            [1, 1, 0, 1, 0, 1, 1],
-            [1, 1, 0, 0, 0, 1, 1]
-        ],
+        'E': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1],
         'F': [],
         'G': [],
         'H': [
@@ -72,7 +66,8 @@ class Fonthub:
         for l in list(string):
             print(l.upper())
             if l.upper() in self.font:
-                displaytext.append(self.font[l.upper()])
+                displaytext += self.font[l.upper()]
+                displaytext += [0, 0, 0, 0, 0, 0, 0]
         return displaytext
 
 

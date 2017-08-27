@@ -18,7 +18,6 @@ class createframe:
         self.go.grid(row=0, column=3)
         self.canvas.grid(columnspan=4)
 
-
         self.grid = GridDisplay(self.canvas)
 
     def writedisplay(self):
